@@ -1,0 +1,83 @@
+.add{
+    display: flex;
+    justify-content: center;
+    height: 980px;
+    background-image: url("https://img.freepik.com/premium-photo/showroom-cars-floor-automobile-company_674594-12070.jpg?w=996");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width:600px){
+        height: 990px;
+       }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 100px;
+        width: 50%;
+        height: 800px;
+        border-radius: 10px;
+        background-color: rgba(231, 205, 205, 0.434);
+        padding: 10px;
+
+        @media screen and (max-width:600px){
+            margin-top: 100px;
+            width: 70%;
+            height: 790px;
+            padding: 10px;
+           }
+
+        .h1{
+            color: black;
+            font-size: 35px;
+            font-family: "Kode Mono", monospace;
+
+            @media screen and (max-width:600px){
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+
+       
+            
+            .form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+
+                height: 100px;
+                background-color: transparent; 
+                height: fit-content;
+                width: 80%;
+                padding: 5px;
+
+                .label{
+                    font-size: 20px;
+                    font-family: "Kode Mono", monospace;
+                }
+
+                .input{
+                    border: none;
+                    outline: 0;
+                    background-color: transparent;
+                    border-bottom: 2px solid black;
+                    width: 100%;
+                    padding: 5px;
+                    
+                }
+                .button{
+                    align-self: center;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: blue;
+                    color: white;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+
+            }
+        }
+    }
+

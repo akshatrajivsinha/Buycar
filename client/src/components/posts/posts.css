@@ -1,0 +1,56 @@
+.main{
+    display:flex;
+    margin: 20px;
+    flex-direction: column;
+
+    @media screen and (max-width:600px){
+        margin: 5px;
+       }
+    
+    .filter{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        @media screen and (max-width:600px){
+            flex-direction: column;
+        }
+
+        .input{
+            border: none;
+            border-bottom:2px solid black;
+            
+        }
+        @media screen and (max-width:600px){
+            font-size: small;
+        }
+
+
+        .button{
+            align-self: center;
+            border: none;
+            border-radius: 3px;
+            background-color: blue;
+            color: white;
+            padding: 5px 10px 5px 10px;
+            cursor: pointer;
+        }
+    }
+
+
+    .posts{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        
+    }
+    
+}
+.posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}

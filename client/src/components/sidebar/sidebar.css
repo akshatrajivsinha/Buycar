@@ -1,0 +1,79 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  height: 100%;
+
+  @media screen and (max-width: 600px) {
+    position: inherit;
+    width: 100%;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    font-family: "Kode Mono", monospace;
+    height: 100%;
+    overflow-y: scroll;
+
+    .h1 {
+      display: flex;
+      margin-top: 20px;
+      font-size: medium;
+      align-self: center;
+    }
+
+    :hover {
+      background-color: rgb(226, 226, 234);
+      transition: 0.5s all ease;
+      border-radius: 10px;
+      scale: 1.01;
+    }
+
+    .recentpost {
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      cursor: pointer;
+
+
+      .img {
+        flex: 1;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        @media screen and (max-width: 600px) {
+          height: 30px;
+          width: 30px;
+        }
+      }
+
+      .postheading {
+        flex: 5;
+        color: black;
+        width: 250px;
+        font-size: medium;
+        @media screen and (max-width: 600px) {
+            flex: 3;
+          font-size: small;
+        }
+      }
+
+      .time {
+        flex: 5;
+        text-align: right;
+        font-size: x-small;
+        @media screen and (max-width: 600px) {
+            flex: 1;
+            text-align: left;
+        }
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
